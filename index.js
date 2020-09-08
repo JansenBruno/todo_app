@@ -1,13 +1,13 @@
 const express = require('express')
-const paginaTodo = require('./views/todo_app')
+const rotasTarefas = require('./src/rotas/rotas-tarefas')
 
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send(paginaTodo);
-});
+rotasTarefas(app); 
 
 app.listen(port, () => 
   console.log("Iniciado com sucesso"));
+
+module.exports = app; 
 
