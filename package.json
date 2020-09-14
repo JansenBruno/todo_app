@@ -2,7 +2,7 @@
   "name": "to_do",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "servidor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/servidor.js "
@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

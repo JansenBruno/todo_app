@@ -1,51 +1,29 @@
+const db = require('../configs/db'); //referencia ao banco de dados 
+
+const TarefasDao = require('../dao/tarefas-dao'); // refencia ao tarefas dao
+
+const TarefasController = require('../controllers/tarefas-controller');
 const geraPaginaTodo = require('../views/todo_app');
 
-let tarefa = [{
-  titulo: "Dentista",
-  descricao: "ir ao dentista amanha"
+const tarefasController = new TarefasController(db)
 
-},
-{
-  titulo: "Compras",
-  descricao: "ir ao mercado"
-},
-{
-  titulo: "Trabalho",
-  descricao: "Verificar"
 
-}]
-
-let arraydb = [{
-  nome: 'Lucio',
-  tarefas: [{
-    titulo: "Yoga",
-    descrição: "yoga segunda e quarta"
-  }]
-},
-{
-  nome: 'Jussara',
-  tarefas: [{
-    titulo: "Musculação",
-    descrição: "Malhar todo dia"
-  }]
-}
-]
+const tarefasDao = new TarefasDao(db);
 
 
 module.exports = (app) => {
 
+  app.get('/', tarefasController.homeTarefas())
+  
 
-  app.get('/', (req, res) => {
 
-    res.send(geraPaginaTodo(tarefa));
+
+
+  app.get('/testerapido', (req, res) => {
+    
+    
+    res.send(geraPaginaTodo(tarefas));
+
   });
+  }
 
-  app.get('/:id', (req, res) => {
-    res.send(geraPaginaTodo(tarefa))
-
-  });
-
-  app.get('/testenodemon', (req, res) => {
-    res.send(`<h1>Rota testada utilizando nodemon</h1>`);
-  });
-} 
