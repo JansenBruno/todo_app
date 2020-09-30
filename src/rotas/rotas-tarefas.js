@@ -2,28 +2,33 @@ const db = require('../configs/db'); //referencia ao banco de dados
 
 const TarefasDao = require('../dao/tarefas-dao'); // refencia ao tarefas dao
 
+
 const TarefasController = require('../controllers/tarefas-controller');
-const geraPaginaTodo = require('../views/todo_app');
+const DeletaController = require('../controllers/deleta-controller');
+const AdicionaController = require('../controllers/adiciona-controller');
+const AtualizarController = require('../controllers/atualiza-controller');
+const AtualizaController = require('../controllers/atualiza-controller');
 
-const tarefasController = new TarefasController(db)
+// const deletaController = new DeletaController(db);
+// const tarefasController = new TarefasController(db);
+// const adicionaController = new AdicionaController(db);
+// const atualizarController = new AtualizaController(db);
 
 
-const tarefasDao = new TarefasDao(db);
 
 
 module.exports = (app) => {
 
-  app.get('/', tarefasController.homeTarefas())
-  
+  app.get('/', TarefasController.homeTarefas()); 
+ 
+  app.delete('/tarefas/:id', DeletaController.deletaTarefa());
+
+  app.post('/tarefas', AdicionaController.addTarefas());
+
+  app.put('/tarefas/:id', AtualizarController.atualizaTarefa());
 
 
+}
 
 
-  app.get('/testerapido', (req, res) => {
-    
-    
-    res.send(geraPaginaTodo(tarefas));
-
-  });
-  }
 
