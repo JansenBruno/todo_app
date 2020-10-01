@@ -1,5 +1,10 @@
 # API TODO_APP utilizando NojeJS.
 
+Quer utilizar ele em produção ? 
+acesse o link abaixo:
+<a href="https://limitless-chamber-55054.herokuapp.com">TODO_APP</a>
+
+
 #### START 
 para iniciar o projeto siga os passos: 
 * caso queira copiar o projeto para sua maquina, abra seu terminar git bash e execute o comando: git clone ☕🤞🏾
@@ -13,10 +18,12 @@ para iniciar o projeto siga os passos:
      express
      method-override
      sqlite3
+===============
 
-##Endpoints 
 
-##GET / 
+## Endpoints 
+
+### GET / 
 Esse endpoint é responsavel por retornar a listagem de todas tarefas cadastradas no banco de dados 
 #### Parametros 
 Nenhum.
@@ -39,7 +46,7 @@ Exemplo:
 
 ================
 
-###POST / 
+### POST / 
 Esse endpoint é responsavel registrar todas tarefas no banco de dados 
 #### Parametros 
 /tarefas
@@ -64,7 +71,7 @@ Exemplo:
 ================
 
 
-###PUT / 
+### PUT / 
 Esse endpoint é responsavel alterar tarefas cadastradas no banco de dados 
 #### Parametros 
 tarefas/id
@@ -93,7 +100,7 @@ Exemplo:
 
 ================
 
-###DELETE / 
+### DELETE / 
 Esse endpoint é responsavel registrar todas tarefas no banco de dados 
 #### Parametros 
 /tarefas/id
