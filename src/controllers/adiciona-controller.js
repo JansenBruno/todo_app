@@ -12,6 +12,7 @@ class AdcionaController {
                 res.redirect('/')}) 
                 .catch(erro => 
                     console.log(erro));
+            
 
         });
     };

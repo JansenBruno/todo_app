@@ -17,7 +17,7 @@ class AtualizaDao {
                      resolve('Tarefa atualizada com sucesso!');
                 }
 
-            );
+            ); 
         });
     }
 }

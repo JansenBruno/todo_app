@@ -1,6 +1,6 @@
-const db = require('../configs/db'); //referencia ao banco de dados 
+// const db = require('../configs/db'); //referencia ao banco de dados 
 
-const TarefasDao = require('../dao/tarefas-dao'); // refencia ao tarefas dao
+// const TarefasDao = require('../dao/tarefas-dao'); // refencia ao tarefas dao
 
 
 const TarefasController = require('../controllers/tarefas-controller');
