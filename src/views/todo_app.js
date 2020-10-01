@@ -12,7 +12,7 @@ function geraPaginaTodo(tarefa) {
                 <h5 class="card-title">${tarefa.titulo}</h5>
                 <p class="card-text">${tarefa.descricao}</p>
                 <p class= "card-text">${tarefa.status}</p>
-                <button type="button" class="btn btn-light editTask" onclick="atualizaTarefa(event)">Editar</button>
+                <button type="button" class="btn btn-light edita" onclick="atualizaTarefa(event)">Editar</button>
                 <button type="button" class="btn btn-light" onclick="deletaTarefa(event)">Deletar</button>
                 </div>
         </div>`
