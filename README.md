@@ -16,7 +16,7 @@ para iniciar o projeto siga os passos:
 
 ##Endpoints 
 
-###GET / 
+##GET / 
 Esse endpoint é responsavel por retornar a listagem de todas tarefas cadastradas no banco de dados 
 #### Parametros 
 Nenhum.
