@@ -112,8 +112,8 @@ Exemplo:
 ```
  {
       "titulo": "Testar software",
-      "descricao": "todo final do dia",
-      "status": "Sempre"
+      "descricao": "teste realizada",
+      "status": "sucesso"
  }
  ```
  ![](https://user-images.githubusercontent.com/56409950/94770027-e312e000-0389-11eb-81e9-d7fa911917d4.gif)
